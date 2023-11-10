@@ -1,0 +1,488 @@
+.container{
+    margin: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.imagecard {
+    float: left;
+    width: 25%;
+    height: auto; /* Should be removed. Only for demonstration */
+    max-height: 40%;
+    position: relative;
+    margin-right: 0px;
+  }
+  .course__item__img { 
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height:auto;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.2s linear;
+  }
+  .details-div{
+    padding: 10px;
+    padding-left: 30px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    background-color:white;
+    
+  }
+
+  .details-div >h1 {
+    font-family: 'Courier New', Courier, monospace;
+    
+  }
+  .details-div >p{
+    font-family:monospace;
+    text-align: justify;
+    font-weight: bolder;
+    line-height: 25px;
+    font-size: larger;
+  }
+  .duration,.schedule,.preReq,.loc,.Instructor{
+    font-family:monospace;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: larger;
+    line-height: 30px;
+  }
+ .button {
+    float: right;
+    background-color: #1f98f4;
+    border: none;
+    color: white;
+    padding:5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  
+  }
+  .syllabus-div{
+    
+    height: 50vh;
+    overflow-y: scroll;
+    background-color:white;
+    margin: 10px;
+  }
+  .row-div{
+    height: 10vh;
+    width: 100%;
+    padding: 10px;
+    
+  }
+  .subject{
+    float: left;
+    border-bottom: 1px solid ;
+    height: 10vh;
+    width: 10%;
+    padding: 20px;
+    background-color: white;
+    
+  }
+  .subject-title{
+    float: left;
+    text-align: center;
+    color: white;
+    height: 10vh;
+    width: 100%;
+    padding: 20px;
+    background-color: #1f98f4;;
+    
+  }
+  .subject > h2{
+    font-family:monospace;
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 20px;
+    
+  }
+  .module{
+    position: relative;
+    float: right;
+    background-color: white;
+    height: 10vh;
+    width: 90%;
+    padding: 10px;
+    border-bottom: 1px solid ;
+  }
+  .module >h3{
+    font-family:monospace;
+    font-weight: bolder;
+    text-align: justify;
+    line-height: 20px;
+  }
+  @media only screen and (max-width: 1024px) {
+    .course__item__img{
+      height: 35vh;
+  }
+  .button{
+    padding: 8px;
+    
+    font-size: 15px;
+  }
+  
+  .syllabus-div{
+    height:50vh;
+    overflow-y: scroll;
+  }
+
+  .subject-title{
+    padding: 15px;
+    height: 8vh;
+  }
+  .subject{
+    width:30%;
+
+  }
+  .subject >h2{
+    font-size: 14px;
+  }
+
+  .module{
+    width:70%;
+    padding: 0;
+  }
+  .module > h3{
+    font-size: 15px;
+  }
+
+  .module > p{
+    font-size: 10px;
+  }
+
+  .duration,.schedule,.preReq,.loc,.Instructor{
+    font-family:monospace;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .details-div{
+    margin:0px;
+    padding: 5px;
+  }
+  .details-div > h1{
+    font-size: 20px;
+  }
+  .details-div > p{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  }
+  
+  @media only screen and (max-width: 960px) {
+    .course__item__img{
+      height: 35vh;
+  }
+  .button{
+    padding: 8px;
+    
+    font-size: 15px;
+  }
+  
+  .syllabus-div{
+    height:50vh;
+    overflow-y: scroll;
+  }
+
+  .subject-title{
+    padding: 15px;
+    height: 8vh;
+  }
+  .subject{
+    width:30%;
+
+  }
+  .subject >h2{
+    font-size: 14px;
+  }
+
+  .module{
+    width:70%;
+    padding: 0;
+  }
+  .module > h3{
+    font-size: 15px;
+  }
+
+  .module > p{
+    font-size: 10px;
+  }
+
+  .duration,.schedule,.preReq,.loc,.Instructor{
+    font-family:monospace;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .details-div{
+    margin:0px;
+    padding: 5px;
+  }
+  .details-div > h1{
+    font-size: 20px;
+  }
+  .details-div > p{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .course__item__img{
+      height: 35vh;
+  }
+  .button{
+    padding: 8px;
+    
+    font-size: 15px;
+  }
+  
+  .syllabus-div{
+    height:50vh;
+    overflow-y: scroll;
+  }
+
+  .subject-title{
+    padding: 15px;
+    height: 8vh;
+  }
+  .subject{
+    width:30%;
+
+  }
+  .subject >h2{
+    font-size: 14px;
+  }
+
+  .module{
+    width:70%;
+    padding: 0;
+  }
+  .module > h3{
+    font-size: 15px;
+  }
+
+  .module > p{
+    font-size: 10px;
+  }
+
+  .duration,.schedule,.preReq,.loc,.Instructor{
+    font-family:monospace;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .details-div{
+    margin:0px;
+    padding: 5px;
+  }
+  .details-div > h1{
+    font-size: 20px;
+  }
+  .details-div > p{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  }
+
+  @media only screen and (min-width: 480) {
+    .course__item__img{
+      height: 35vh;
+  }
+  .button{
+    padding: 4px;
+    margin: 0;
+    height: 3vh;
+    font-size: 10px;
+  }
+  .enroll{
+    height: 5vh;
+    margin-top: -8px;
+  }
+  .syllabus-div{
+    height:50vh;
+    overflow-y: scroll;
+  }
+
+  .subject-title{
+    padding: 5px;
+    height: 5vh;
+  }
+  .subject{
+    width:30%;
+
+  }
+  .subject >h2{
+    font-size: 14px;
+  }
+
+  .module{
+    width:70%;
+    padding: 0;
+  }
+  .module > h3{
+    font-size: 15px;
+  }
+
+  .module > p{
+    font-size: 10px;
+  }
+
+  .duration,.schedule,.preReq,.loc,.Instructor{
+    font-family:monospace;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .details-div{
+    margin:0px;
+    padding: 5px;
+  }
+  .details-div > h1{
+    font-size: 15px;
+  }
+  .details-div > p{
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  }
+  
+  @media only screen and (max-device-width: 480px) {
+    .course__item__img{
+      height: 35vh;
+  }
+  .button{
+    padding: 4px;
+    margin: 0;
+    height: 3vh;
+    font-size: 10px;
+  }
+  .enroll{
+    height: 5vh;
+    margin-top: -8px;
+  }
+  .syllabus-div{
+    height:50vh;
+    overflow-y: scroll;
+  }
+
+  .subject-title{
+    padding: 5px;
+    height: 5vh;
+  }
+  .subject{
+    width:30%;
+
+  }
+  .subject >h2{
+    font-size: 14px;
+  }
+
+  .module{
+    width:70%;
+    padding: 0;
+  }
+  .module > h3{
+    font-size: 15px;
+  }
+
+  .module > p{
+    font-size: 10px;
+  }
+
+  .duration,.schedule,.preReq,.loc,.Instructor{
+    font-family:monospace;
+    font-weight: bolder;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .details-div{
+    margin:0px;
+    padding: 5px;
+  }
+  .details-div > h1{
+    font-size: 15px;
+  }
+  .details-div > p{
+    font-size: 12px;
+    line-height: 10px;
+  }
+
+  }
+
+  @media only screen and (max-device-width: 360px) {
+    .course__item__img{
+        height: 35vh;
+    }
+    .button{
+      padding: 4px;
+      margin: 0;
+      height: 3vh;
+      font-size: 10px;
+    }
+    .enroll{
+      height: 5vh;
+      margin-top: -8px;
+    }
+    .syllabus-div{
+      height:50vh;
+      overflow-y: scroll;
+    }
+
+    .subject-title{
+      padding: 5px;
+      height: 5vh;
+    }
+    .subject{
+      width:30%;
+
+    }
+    .subject >h2{
+      font-size: 14px;
+    }
+
+    .module{
+      width:70%;
+      padding: 0;
+    }
+    .module > h3{
+      font-size: 10px;
+    }
+
+    .module > p{
+      font-size: 10px;
+    }
+
+    .duration,.schedule,.preReq,.loc,.Instructor{
+      font-family:monospace;
+      font-weight: bolder;
+      text-align: justify;
+      font-size: 10px;
+      line-height: 15px;
+    }
+    .details-div{
+      margin:0px;
+      padding: 5px;
+    }
+    .details-div > h1{
+      font-size: 12px;
+    }
+    .details-div > p{
+      font-size: 10px;
+      line-height: 15px;
+    }
+
+  }
