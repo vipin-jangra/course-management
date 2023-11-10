@@ -15,3 +15,26 @@ Must have node, npm/yarn installed
 npm install
 npm run dev
 ```
+
+# Test users
+
+```ts
+const users = [
+    {
+    id: 101,
+    name: 'Alice Johnson',
+    email: 'alice@example.com',
+ 
+    },
+    {
+    id: 102,
+    name: 'Bob Smith',
+    email: 'bob@example.com',
+    
+    },
+];
+```
+
+# Note
+
+This app uses dummy data as a global redux state. Although its not practical but for faster development (without setting up an additional backend) for sake of this assignment purpose, I took this approach. 
