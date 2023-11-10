@@ -1,0 +1,9 @@
+.root-contaienr {
+    width: 100%;
+}
+
+.components-container {
+    margin-top: 64px;
+    padding: 16px;
+    height: 100%;
+}

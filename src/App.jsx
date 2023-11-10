@@ -1,18 +1,19 @@
 import {BrowserRouter as Router, Routes,Route, Outlet} from 'react-router-dom'
 import Home from './Components/Home/Home';
-import Navbar from './Components/Navbar/Navbar';
 import Course from './Components/Course/Course';
 import Login from './Components/Signup/Login';
 import ProtectedOutlet from './Components/ProtectedOutlet';
 import Dashboard from './Components/Dashboard/Dashboard';
+import AppOutlet from './Components/AppOutlet';
 
 function App() {
   
   return (
       <>
           <Router>
-          <Navbar />
               <Routes>
+              <Route element={<AppOutlet />} >
+
                   <Route path='/login' exact element={<Login />} />
                   <Route element={<ProtectedOutlet />}>
                     <Route path ='' index element={<Home />}></Route>
@@ -22,6 +23,7 @@ function App() {
                       <Route path='/course/:id' exact element={<Course />}></Route>
                     </Route>
                   </Route>
+              </Route>
                 
               </Routes>
           </Router>
