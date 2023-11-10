@@ -3,6 +3,7 @@ import './Dashboard.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { completedCourse, selectUser } from '../../AppSlice';
 import Img from '../../assets/social-media.jpg';
+import { useState } from 'react';
 
 const Dashboard = (()=>{
     const user = useSelector(selectUser);
@@ -25,8 +26,7 @@ const Dashboard = (()=>{
     const allCompletedCourses = useSelector((state)=>{
         return state.users.completedCourse;
     })
-
-    console.log(enrolledCourseDetails.length);
+    
     return (
         <div className='dash-main'>
             <div className='dash-header'>
@@ -64,11 +64,11 @@ const Dashboard = (()=>{
                                 <td>{val.name}</td>
                                 <td>{val.instructor}</td>
                                 <td>{val.duration}</td>
-                                <td><button className='dash-button' onClick={()=>{
+                                <td><button className={allCompletedCourses.includes(val.id) ? "dash-button-completed" : "dash-button"} onClick={()=>{
                                     if(!allCompletedCourses.includes(val.id)){
                                         dispatch(completedCourse(val.id))
                                     }
-                                }}>{allCompletedCourses.includes(val.id) ? "Completed" : "Complete"}</button></td>
+                                }}>{allCompletedCourses.includes(val.id) ? "Completed" : "Mark as Completed"}</button></td>
                             </tr>
                         )
                     })}

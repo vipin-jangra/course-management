@@ -48,7 +48,7 @@
     font-size: larger;
     line-height: 30px;
   }
- .button {
+ .button-enroll{
     float: right;
     background-color: #1f98f4;
     border: none;
@@ -59,8 +59,31 @@
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-  
   }
+.button-completed{
+    float: right;
+    background-color: green;
+    border: none;
+    color: white;
+    padding:5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: not-allowed;
+}
+.button-enrolled{
+  float: right;
+    background-color:#1f98f4;
+    border: none;
+    color: white;
+    padding:5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
   .syllabus-div{
     
     height: 50vh;

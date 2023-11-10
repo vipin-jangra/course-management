@@ -4,12 +4,13 @@ import { useDispatch, useSelector } from "react-redux";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useParams } from "react-router-dom";
 import { enrolledCourse } from '../../AppSlice';
+import { useState } from 'react';
 
 
 function Course(){
     const {id} = useParams();
     const dispatch = useDispatch();
-
+    
     const courses = useSelector((state)=>{
         return state.courses.courses;
       });
@@ -23,6 +24,9 @@ function Course(){
         return state.users.completedCourse;
     })
 
+    
+
+    
     return (<>
        <div className="container">
             <div className="imagecard">
@@ -52,7 +56,7 @@ function Course(){
                 <div className="Instructor"> <span className='inst-icon'>{<AccountCircleIcon color ="action"/>} </span> {course.instructor} </div>
                 
                 <div className="enroll">
-                <button className="button" onClick={()=>{
+                <button className={allCompletedCourses.includes(course.id) ? "button-completed" : (allenrolledCourse.includes(course.id) ? "button-enrolled":"button-enroll")} onClick={()=>{
                     if(!allenrolledCourse.includes(course.id)){
                         dispatch(enrolledCourse(course.id))
                     }

@@ -107,6 +107,18 @@ td {
     margin: 0px;
     font-size: 16px;
     cursor: pointer;
-  
+    width:220px;
+  }
+  .dash-button-completed{
+    width:220px;
+    background-color:green;
+    border: none;
+    color: white;
+    padding:5px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px;
+    font-size: 16px;
+    cursor: not-allowed;
   }
 
