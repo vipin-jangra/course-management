@@ -138,9 +138,7 @@
     line-height: 20px;
   }
   @media only screen and (max-width: 1024px) {
-    .course__item__img{
-      height: 35vh;
-  }
+    
   .button{
     padding: 8px;
     
@@ -154,7 +152,6 @@
 
   .subject-title{
     padding: 15px;
-    height: 8vh;
   }
   .subject{
     width:30%;
@@ -198,9 +195,7 @@
   }
   
   @media only screen and (max-width: 960px) {
-    .course__item__img{
-      height: 35vh;
-  }
+    
   .button{
     padding: 8px;
     
@@ -258,9 +253,7 @@
   }
   
   @media only screen and (max-width: 768px) {
-    .course__item__img{
-      height: 35vh;
-  }
+    
   .button{
     padding: 8px;
     
@@ -318,9 +311,7 @@
   }
 
   @media only screen and (min-width: 480) {
-    .course__item__img{
-      height: 35vh;
-  }
+    
   .button{
     padding: 4px;
     margin: 0;
@@ -382,9 +373,7 @@
   }
   
   @media only screen and (max-device-width: 480px) {
-    .course__item__img{
-      height: 35vh;
-  }
+   
   .button{
     padding: 4px;
     margin: 0;
@@ -446,9 +435,7 @@
   }
 
   @media only screen and (max-device-width: 360px) {
-    .course__item__img{
-        height: 35vh;
-    }
+    
     .button{
       padding: 4px;
       margin: 0;
