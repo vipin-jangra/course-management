@@ -16,8 +16,10 @@ npm install
 npm run dev
 ```
 
-# Test users
 
+# Test 
+[Demo Link](https://course-management-sabj.onrender.com/)  
+**Test Users:**
 ```ts
 const users = [
     {
